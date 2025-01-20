@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMC Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/emcnav.png" alt="assets/imgerror.jpg">
+        </div>
+        <div class="nav-toggle" onclick="toggleNavbar()">☰</div>
+        <nav class="nav" id="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Store</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQ</a>
+            <a href="#">Account</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="jumbo-screen">
+        <div class="overlay"></div>
+        <button class="clickable" onclick="alert('Thank you for your purchase!')">Buy Now</button>
+    </div>
+
+    <!-- Clickable opens an alert window for message -->
+
+    <div class="title-section">
+        <h1>Enertia PC Handheld</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut saepe, laborum pariatur consectetur molestiae maxime mollitia nam necessitatibus porro similique modi sint corporis eveniet libero harum adipisci fugiat quia doloremque.</p>
+    </div>
+
+    <div class="title-section">
+        <h2>Insert Feature</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni itaque iure quaerat quidem facere ducimus, repellendus quibusdam autem neque quis ad officiis suscipit odit, explicabo sapiente asperiores aspernatur libero.
+        Accusamus obcaecati delectus illo distinctio, libero maxime deserunt repellendus rem, sed, quo rerum aliquid quia repudiandae totam culpa magnam consectetur. Fugiat esse nisi placeat quos possimus provident temporibus, aliquid nobis.</p>
+    </div>
+
+    <div class="title-section">
+        <h2>Insert Feature</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni itaque iure quaerat quidem facere ducimus, repellendus quibusdam autem neque quis ad officiis suscipit odit, explicabo sapiente asperiores aspernatur libero.
+        Accusamus obcaecati delectus illo distinctio, libero maxime deserunt repellendus rem, sed, quo rerum aliquid quia repudiandae totam culpa magnam consectetur. Fugiat esse nisi placeat quos possimus provident temporibus, aliquid nobis.</p>
+    </div>
+
+    <div class="title-section">
+        <h2>Insert Feature</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni itaque iure quaerat quidem facere ducimus, repellendus quibusdam autem neque quis ad officiis suscipit odit, explicabo sapiente asperiores aspernatur libero.
+        Accusamus obcaecati delectus illo distinctio, libero maxime deserunt repellendus rem, sed, quo rerum aliquid quia repudiandae totam culpa magnam consectetur. Fugiat esse nisi placeat quos possimus provident temporibus, aliquid nobis.</p>
+    </div>
+
+    <div class="title-section">
+        <h2>Insert Feature</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni itaque iure quaerat quidem facere ducimus, repellendus quibusdam autem neque quis ad officiis suscipit odit, explicabo sapiente asperiores aspernatur libero.
+        Accusamus obcaecati delectus illo distinctio, libero maxime deserunt repellendus rem, sed, quo rerum aliquid quia repudiandae totam culpa magnam consectetur. Fugiat esse nisi placeat quos possimus provident temporibus, aliquid nobis.</p>
+    </div>
+
+    <div class="ask-us-section">
+        <button class="ask-us-btn" onclick="document.getElementById('feedback-form').style.display='block'">Ask Us a Question</button>
+    </div>
+    
+    <!-- On click it opens another window with a form for people to fill out -->
+    
+    <div id="feedback-form" class="form">
+        <div class="form-content">
+            <h2>We'd Love to Hear From You</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+    
+            <label for="feedback">Feedback/Question:</label>
+            <textarea id="feedback" name="feedback" placeholder="Enter your feedback or question" rows="5"></textarea>
+    
+            <button class="submit-btn" onclick="document.getElementById('feedback-form').style.display='none'">Submit</button>
+            <button class="close-btn" onclick="document.getElementById('feedback-form').style.display='none'">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Game Shop. All rights reserved.</p>
+        <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script>
+        function toggleNavbar() {
+            const nav = document.getElementById('nav-links');
+            nav.classList.toggle('show');
+        }
+    </script>
+    <!-- This is for the nav bar -->
+</body>
+</html>

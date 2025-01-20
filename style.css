@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f049;
+  color: rgb(0, 0, 0);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(to left, #d1aa0e, #f0f049);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 60px;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+/* Hides button when bar is toggle */
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 1rem;
+  color: rgb(16, 16, 16);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+
+.nav a:hover {
+  color: #14c8d5;
+}
+
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  background: #e6943c;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+nav a:last-of-type{
+  margin-right: 60px;
+}
+
+/* site change when width hits 900px */
+@media (max-width: 900px) {
+  .nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: #f9f9f9;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      z-index: 1000;
+      padding: 1rem 0;
+  }
+
+  .nav a {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      color: #1a1a1a;
+      text-align: center;
+  }
+
+  .nav-toggle {
+      display: block;
+      margin-right: 40px;
+  }
+
+  .nav.show {
+      display: flex;
+  }
+}
+
+.jumbo-screen {
+  position: relative;
+  background: url('assets/enertiacon.jpg') center/cover no-repeat;
+  height: 600px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbo-screen .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.jumbo-screen .content {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.jumbo-screen .clickable {
+  position: absolute;
+  bottom: 30px;
+  align-items: center;
+  background-color: #e6943c;
+  font-weight: bold;
+  color: #1a1a1a;
+  padding: 0.75rem 2rem;
+  border: 3px solid #000;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.jumbo-screen .clickable:hover {
+  background-color: #9d7d0c;
+}
+
+.title-section {
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+  padding: 1rem;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  background-color: #d7c016;
+}
+
+.title-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.title-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.title-section p {
+  font-size: 1.25rem;
+  margin: 0 60px 1.5rem 60px;
+}
+
+.title-section .clickable {
+  background-color: #e6943c;
+  font-weight: bold;
+  color: #1a1a1a;
+  padding: 0.75rem 2rem;
+  border: 3px solid #000;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.title-section .clickable:hover {
+  background-color: #9d7d0c;
+}
+
+footer {
+  background-color: #1f1f1f;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.ask-us-section {
+  text-align: center;
+  margin: 20px 0;
+  padding: 1rem;
+  background-color: #d3d3d3;
+}
+
+.ask-us-btn {
+  background-color: #e6943c;
+  color: #1a1a1a;
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  border: 3px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ask-us-btn:hover {
+  background-color: #9d7d0c;
+}
+
+.form {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.form-content h2 {
+  margin-top: 0;
+}
+
+.form-content label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-content input,
+.form-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn,
+.close-btn {
+  background-color: #e6943c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.submit-btn:hover,
+.close-btn:hover {
+  background-color: #9d7d0c;
+}
+
+footer .socials {
+  margin-top: 1rem;
+}
+
+footer .socials a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #f9d342;
+  font-size: 1.25rem;
+}
